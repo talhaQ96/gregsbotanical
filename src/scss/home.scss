@@ -1,0 +1,862 @@
+@font-face {
+    font-family: 'Bretageds';
+    src: url('/wp-content/themes/custom-theme/assets/fonts/Bretageds-Regular.eot');
+    src: url('/wp-content/themes/custom-theme/assets/fonts/Bretageds-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/custom-theme/assets/fonts/Bretageds-Regular.woff2') format('woff2'),
+        url('/wp-content/themes/custom-theme/assets/fonts/Bretageds-Regular.woff') format('woff'),
+        url('/wp-content/themes/custom-theme/assets/fonts/Bretageds-Regular.ttf') format('truetype'),
+        url('/wp-content/themes/custom-theme/assets/fonts/Bretageds-Regular.svg#Bretageds-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.banner-main-section-wrap{
+	/*min-height:754px;*/
+	min-height:initial;
+	@media (min-width:801px){
+		min-height:150px;
+	}
+	@media (min-width:1101px){
+		min-height:initial;
+	}
+}
+.banner-content-container{
+	position:relative;
+}
+.banner-content-wrap{
+	color: #fff;
+    padding: 10% 0 20%;
+    display: flex;
+    flex-direction: column;
+	
+	@media (min-width:801px){
+		position:absolute;
+	}
+	
+	.banner-title-wrap{
+		font-family: 'Kaisei Tokumin', sans-serif;
+		font-size:50px;
+		line-height:1.16;
+		font-weight:700;
+		max-width:344px;
+		margin:0 auto;
+		text-align:center;
+		
+		@media (min-width:1025px){
+			font-size:60px;
+			line-height:1.2;
+			max-width: 40.59%;
+			text-align:left;
+			margin:0;
+		}
+	}
+	.banner-inner-content-wrap{
+		font-size:14px;
+		line-height:1.57;
+		
+		@media (min-width:1025px){max-width: 43.59%;}
+		
+		p{margin:20px 0 0;}
+	}
+}
+
+.home-gregs-farm-wrap{
+	position: relative;
+	padding: 80px 0;
+	z-index: 2;
+	background-color: #f9fafc;
+	.home-gregs-farm-inner-wrap{
+		z-index:5;
+		&.md-flex-wrap{
+			@media (min-width: 801px){
+				display:flex;
+				align-items:center;
+				flex-wrap: wrap;
+				.gregs-farm-img-wrap{width:50%;}
+				.gregs-farm-main-inner-cnt-wrap{
+					width:43.6%;
+					padding-left:6.4%;
+				}
+			}
+		}
+		.gregs-farm-img-wrap{
+			img{max-width:100%;margin:0 auto;display:block;}
+			svg{max-width:100%;height:auto;}
+		}
+		.gregs-farm-main-inner-cnt-wrap{
+			@media (max-width:800px){
+				.gregs-farm-botanical-black-img-wrap{padding-top:30px;}
+				text-align:center;
+			}
+		}
+	}
+	
+	.gregs-farm-desc-wrap{
+		font-size:14px;
+		line-height:1.57;
+		color:#606060;
+	}
+	
+	.gregs-farm-content-coupon-data-wrap{
+		display:flex;
+		align-items:center;
+		flex-wrap: wrap;
+		padding-top:45px;
+		
+		.gregs-farm-content-coupon-data-cnt-code-wrap,.gregs-farm-discount-perc-text{
+			width:100%;
+			@media (min-width: 801px){width:50%;}
+		}
+		.gregs-farm-discount-perc-text{
+			font-size:99px;
+			line-height:0.8;
+			color: #84B915;
+			font-family: 'Bretageds', sans-serif;
+		}
+		.gregs-farm-use-code-text{
+			color: #227102;
+			text-transform: capitalize;
+			font-weight:700;
+		}
+		.gregs-farm-coupon-code-text-copy-wrap{
+			font-size:32px;
+			color: #1e1e1e;
+			font-weight: 700;
+		}
+		.gregs-farm-coupon-desc-inner-wrap{
+			padding-top:10px;
+			font-size:12px;
+			line-height:1.57;
+			color: #989898;
+			.green-font{
+				color: #84B915;
+			}
+		}
+	}
+}
+
+.common-z-index-increase{position:relative;z-index:5;}
+
+.home-best-selling-wrap-leaf-container{
+	position:relative;
+	overflow:hidden;
+}
+.home-best-selling-wrap-bottom-leaf-container,.home-new-arrivals-wrap-leaf-container{position:relative;}
+.home-best-selling-wrap{
+	padding: 150px 0 100px;
+	position: relative;
+	background-color: #f9fafc;
+}
+.best-selling-title-wrap{text-align:center;}
+.best-selling-inner-title-wrap{
+	color:#fff;font-size:70px;line-height:0.82;font-family: 'Bretageds';
+	z-index: 2;
+    position: relative;
+	&.green-font{color: #84B915;}
+	
+	@media (min-width:551px){font-size:80px;}
+	@media (min-width:801px){font-size:90px;}
+}
+
+.best-selling-inner-subtitle-wrap{
+	font-family: 'Kaisei Tokumin', sans-serif;
+	font-size:40px;
+	line-height:1.16;
+	font-weight:700;
+	color: #1E1E1E;
+	margin-top: -35px;
+	padding-bottom:35px;
+	@media (min-width:551px){font-size:45px;}
+	@media (min-width:801px){font-size:50px;}
+}
+
+.home-best-selling-wrap-leaf-container{
+	.best-selling-inner-title-wrap{
+		line-height:1.2;
+	}
+	.best-selling-inner-subtitle-wrap{
+		margin-top: -35px;
+		padding-bottom:45px;
+	}
+}
+
+.best-selling-inner-desc-wrap{
+	font-size:14px;
+	line-height:1.57;
+	color:#1e1e1e;
+	padding-bottom:15px;
+	margin:0 auto;
+	max-width:770px;
+	a{
+		color:#1e1e1e;
+		text-decoration:underline;
+		&:hover{
+			text-decoration:none;
+		}
+	}
+	@media (min-width:801px){padding-bottom:30px;}
+}
+.best-selling-prds-wrapper{
+	padding-top:30px;
+	
+	.slick-track{display:flex;}
+	.slick-next{
+		right:25px;
+		@media (min-width:551px){right:0;}
+		@media (min-width:1321px){right:-75px}
+	}
+	.slick-prev{
+		left:25px;
+		@media (min-width:551px){left:0;}
+		@media (min-width:1321px){left:-75px}
+	}
+}
+
+.home-new-arrivals-wrap{
+	padding: 150px 0 100px;
+	position: relative;
+	background-color:#227102;
+}
+
+.best-selling-inner-title-wrap{
+	&.light-green{color: #84B915;}
+}
+.best-selling-inner-subtitle-wrap{
+	&.white-font{color:#ffffff;}
+}
+.best-selling-inner-desc-wrap{
+	&.white-font{
+		color:#ffffff;
+		a{
+			color:#ffffff;
+			text-decoration:underline;
+			&:hover{
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+
+.greg-about-banner-main-section-wrap{
+	position:relative;
+	z-index:2;
+	padding: 200px 0;
+	@media (min-width:1921px){
+		padding: 8% 0 6%;
+	}
+	&::after{
+		position:absolute;
+		content:'';
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:rgba(0,0,0,.71);
+	}
+	.greg-banner-content-container{position:relative;z-index:10;color:#fff;}
+	.greg-botanical-img-wrap{margin-bottom:10px;}
+	.greg-botanical-banner-title-one-wrap{
+		
+		font-size:40px;line-height:1.16;font-family: 'Kaisei Tokumin', sans-serif;font-weight:700;text-transform:capitalize;
+		
+		@media (min-width:451px){
+			font-size:50px;
+		}
+		@media (min-width:801px){
+			font-size:60px;line-height:1.167;
+		}
+	}
+	.greg-botanical-banner-title-two-wrap{
+		font-size:40px;line-height:1.16;font-family: 'Kaisei Tokumin', sans-serif;font-weight:700;text-transform:capitalize;color: #C1DC8A;
+		
+		@media (min-width:451px){
+			font-size:50px;
+		}
+		@media (min-width:801px){
+			font-size:60px;line-height:1.167;
+		}
+	}
+	
+	.greg-botanical-inner-md-flex-wrap{
+		padding: 28px 0;
+		display:flex;
+		flex-wrap:wrap;
+		.greg-botanical-banner-content-wrap{
+			width:100%;
+			font-size:14px;
+			line-height:1.57;
+			padding-bottom:20px;
+			@media (min-width:801px){
+				width:calc(50% - 15px);
+				padding-bottom:0;
+				&.left-md-column{padding-right:15px;}
+				&.right-md-column{padding-left:15px;}
+			}
+		}
+		&.full-width-flex-md{
+			justify-content:center;
+			margin:0 auto;
+			max-width: 770px;
+			.greg-botanical-banner-content-wrap{
+				text-align:center;
+				@media (min-width:801px){
+					width:100%;
+					&.left-md-column{padding-right:0;}
+					&.right-md-column{padding-left:0;}
+				}
+				
+			}
+		}
+	}
+	
+	.greg-botanical-link-wrap{
+		text-align:center;
+		a{min-width:280px;}
+	}
+}
+
+.home-gregs-favs-wrap,.home-gregs-favs-leaf-bottom-right-wrap{position:relative;}
+
+.gregs-favs-cats-wrap{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	.sin-favs-cats-wrap{
+		position:relative;
+		width:100%;
+		border-radius: 10px;
+		margin-bottom:30px;
+		display: flex;
+		justify-content: right;
+		flex-direction: column;
+		transition: all 100ms linear;
+		
+		&>a{flex:1;}
+		
+		.gregs-favs-content-md-backdrop-hover{position:absolute;width:100%;height:100%;top:0;left:0;}
+		
+		&.not-view-all-favs{
+			&::before{
+				position:absolute;width:100%;height:100%;content:'';background-color:rgba(0,0,0,.7);
+				border-radius:10px;
+			}
+		}
+		@media (min-width:801px){
+			width:calc(50% - 15px);
+			
+			&:hover{
+				.gregs-favs-content-md-backdrop-hover{
+					backdrop-filter: blur(12px);
+					-webkit-backdrop-filter: blur(12px);
+					border-radius:10px;
+				}
+				.gregs-favs-sin-cat-title-wrap{
+					font-size:38px;
+					line-height:1.3;
+					max-width:initial;
+					span{
+						display:initial;
+					}
+				}
+				.gregs-favs-sin-cat-desc-wrap{
+					opacity:1;
+					height:auto;
+				}
+			}
+			
+			&.not-view-all-favs{
+				&::before{
+					background-color:rgba(0,0,0,.49);
+				}
+			}
+		}
+		
+		&.not-view-all-favs{
+			.gregs-favs-cat-img-wrap{
+				img{
+					width:100%;
+					object-fit:cover;
+				}
+			}
+		}
+		
+		&.view-all-favs{
+			&::before{
+				position:absolute;width:100%;height:100%;content:'';background-color:rgba(0,0,0,.3);
+				border-radius:10px;
+				@media (min-width:1101px){
+					content:none;
+				}
+			}
+			.gregs-favs-cat-content-wrap{
+				.gregs-favs-sin-cat-title-wrap{
+					line-height:1.25;max-width:145px;
+					@media (min-width:801px){
+						line-height:1.167;
+						max-width:180px;
+					}
+				}
+			}
+		}
+	}
+	.gregs-favs-cat-img-wrap{
+		display:flex;
+		a{flex:1;}
+		img{
+			max-width:100%;display:block;margin-left: auto;
+		}
+	}
+	
+	.gregs-favs-cat-content-wrap{
+		position:absolute;
+		left:12.28%;
+		top:50%;
+		color:#fff;
+		transform:translateY(-50%);
+		max-width:70%;
+		@media (max-width:450px){max-width:80%;left:10%;}
+		
+		.gregs-favs-sin-cat-title-wrap{
+			font-size:32px;
+			line-height:1.57;
+			font-family: 'Kaisei Tokumin', sans-serif;
+			
+			@media (min-width:801px){
+				font-size:42px;
+				line-height:1.167;
+				font-weight:700;
+				max-width:185px;
+				span{
+					display:block;
+				}
+			}
+			@media (max-width:450px){
+				font-size:24px;
+				line-height:1.2;
+			}
+		}
+		.gregs-favs-sin-cat-desc-wrap{
+			padding-top:15px;
+			font-size:14px;
+			line-height:1.57;
+			@media (min-width:801px){
+				line-height:16px;
+				line-height:1.5;
+				opacity:0;
+				height:0;
+			}
+			@media (max-width:450px){
+				padding-top:5px;
+			}
+		}
+	}
+}
+
+.home-gregs-satisf-gua-wrap{
+	position: relative;
+	padding: 120px 0 20px;
+	z-index: 2;
+	.home-gregs-satisf-inner-wrap{
+		z-index: 5;
+		&.md-flex-wrap{
+			@media (min-width: 801px){
+				display:flex;
+				align-items:center;
+				flex-wrap: wrap;
+				.gregs-satisf-img-wrap{width:50%;}
+				.gregs-satisf-main-inner-cnt-wrap{
+					width:43.6%;
+					padding-left:6.4%; 
+				}
+			}
+		}
+		.gregs-satisf-main-inner-cnt-wrap{
+			@media (max-width:800px){text-align:center;}
+		}
+		.gregs-satisf-img-wrap{
+			img{max-width:100%;height:auto;}
+		}
+		.gregs-satisf-title-wrap{
+			font-family: 'Kaisei Tokumin', sans-serif;
+			font-weight:700;
+			font-size:50px;
+			line-height:1.2;
+			padding-bottom:15px;
+			
+			@media (min-width: 801px){
+				line-height:1.166;
+				font-size:60px;
+				padding-bottom:30px;
+			}
+		}
+		.gregs-satisf-desc-wrap{
+			font-size:14px;
+			line-height:1.57;
+			color: #606060;
+			padding-bottom:30px;
+		}
+		.greg-satisf-link-wrap{
+			&>a{
+				padding-left:25px;padding-right:25px;
+				border:1px solid #227102;
+				&:hover{border-color:#227102;}
+			}
+		}
+	}
+	.gregs-botanical-benefits-title-wrap{
+		padding-top:35px;
+		font-size:48px;
+		font-family: 'Bretageds', sans-serif;
+		color: #84B915;
+	}
+	.gregs-botanical-benefits-multi-wrap{
+		padding:30px 0;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.sin-gregs-botanical-benefit-wrap{
+			@media (min-width:1025px){
+				max-width:160px;
+			}
+			padding:10px 20px;
+			width:100%;
+			
+			.sin-gregs-botanical-benefit-inner-wrap{
+				text-align:center;
+				
+				img{margin:0 auto;}
+				
+				.gregs-botanical-benefit-title-wrap{
+					color: #606060;
+					text-transform: capitalize;
+					font-size:16px;
+					font-weight:700;
+					line-height:1.42;
+					padding-top:15px;
+				}
+			}
+		}
+	}
+}
+
+.home-wow-main-wrap{
+	position: relative;
+	padding: 140px 0 100px;
+	z-index: 2;
+	justify-content: center;
+    align-items: center;
+    display: flex;
+	min-height: 360px;
+	
+	.wow-container{
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		
+		@media (max-width:800px){
+			flex-direction:column;
+		}
+	}
+	
+	.wow-inner-call-no-wrap{padding:45px;}
+	
+	.wow-inner-title-wrap{
+		color:#fff;
+		font-family: 'Bretageds', sans-serif;
+		font-size:70px;
+		line-height:normal;
+		text-transform: capitalize;
+		letter-spacing: 2.5px;
+		text-align: center;
+		
+		@media (min-width:551px){font-size:80px;line-height:0.9;}
+		
+		@media (min-width: 801px){
+			font-size:110px;
+			max-width:428px;
+			transform: rotate(-8deg);
+		}
+	}
+	
+	.wow-outer-call-column-wrap-md{text-align:center;}
+	.wow-inner-call-title-wrap{
+		color: #F9FAFC;
+		line-height:1.5;
+		font-weight:700;
+		text-transform:uppercase;
+	}
+	.wow-inner-call-no-wrap{
+		a{
+			color: #F9FAFC;
+			font-weight:700;
+			font-size:27px;
+		}
+	}
+}
+
+.home-reviews-main-wrap{
+	background-color:#F9FAFC;
+	padding:80px 0;
+	.reviews-link-wrap{
+		text-align:center;
+		padding:30px 0 50px;
+		a{
+			padding-left:30px;padding-right:30px;border:1px solid #227102;
+			&:hover{
+				color:#227102;background-color:#fff;
+			}
+		}
+	}
+	
+	.home-reviews-main-imgs-wrap{
+		.slick-track{display:flex;}
+		.slick-next{
+			right:25px;
+			@media (min-width:551px){right:0;}
+			@media (min-width:1321px){right:-75px;}
+		}
+		.slick-prev{
+			left:25px;
+			@media (min-width:551px){left:0;}
+			@media (min-width:1321px){left:-75px;}
+		}
+	}
+	
+	.reviews-imgs-wrap{
+		text-align:center;
+		padding-bottom:50px;
+		.sin-reviews-img-wrap{padding:0 35px;text-align:center;width:100%;}
+	}
+	
+	.sin-review-inner-img-wrap{
+		img{display:block;margin:0 auto;}
+	}
+}
+
+.home-payment-options-wrap{
+	position: relative;
+	padding: 100px 0 130px;
+	z-index: 2;
+	background-color:#84b915;
+	
+	.home-payment-optns-inner-wrap{
+		z-index: 5;
+		&.md-flex-wrap{
+			@media (min-width: 801px){
+				display:flex;
+				align-items:center;
+				flex-wrap: wrap;
+				.home-payment-optns-img-wrap{width:55%;}
+				.home-payment-optns-main-inner-cnt-wrap{
+					width:43.6%;
+					padding-right:1.4%; 
+				}
+			}
+		}
+		.home-payment-optns-main-inner-cnt-wrap{
+			@media (max-width:800px){text-align:center;}
+		}
+		.home-payment-optns-img-wrap{
+			img{max-width:100%;}
+		}
+		.home-payment-optns-title-wrap{
+			font-family: 'Kaisei Tokumin', sans-serif;
+			font-weight:700;
+			font-size:50px;
+			line-height:1.2;
+			color: #1E1E1E;
+			text-transform: capitalize;
+			padding-bottom:15px;
+			
+			@media (min-width: 801px){
+				line-height:1.166;
+				font-size:60px;
+				padding-bottom:25px;
+				max-width:300px;
+			}
+		}
+		.home-payment-optns-desc-wrap{
+			font-size:14px;
+			line-height:1.57;
+			color: #1E1E1E;
+			padding-bottom:30px;
+		}
+		.home-payment-optns-link-wrap{
+			&>a{
+				padding-left:30px;padding-right:30px;
+				border:1px solid #227102;
+				&:hover{border-color:#227102;}
+			}
+		}
+	}
+}
+
+.home-news-announce-wrap{
+	padding:120px 0 20px;
+	background-color:#f5f5f5;
+	position:relative;
+	.posts-main-wrap{
+		padding-top:25px;
+		z-index: 2;
+		.slick-track{display:flex;}
+		.slick-next{
+			right:25px;
+			@media (min-width:551px){right:0;}
+			@media (min-width:1321px){right:-75px;}
+		}
+		.slick-prev{
+			left:25px;
+			@media (min-width:551px){left:0;}
+			@media (min-width:1321px){left:-75px;}
+		}
+		
+		.sin-post-main-outer-wrap{
+			padding:0 15px;
+			&.slick-slide{display:flex;height:auto;}
+		}
+		
+		.sin-post-box{
+			position:relative;z-index:2;
+			
+			display: flex;
+			flex-direction: column;
+			
+			.post-thumbnail{
+				border-radius: 10px 10px 0px 0px;
+				
+				padding-bottom: 81.081%;
+				position: relative;
+				
+				img{
+					display:block;
+					max-width:100%;
+					/*height:auto;*/
+					width:100%;
+					object-fit:cover;
+					
+					position: absolute;
+					height: 100%;
+					left:0;
+					top:0;
+				}
+			}
+		}
+		.sin-post-content-data-wrap{
+			padding:27px 30px 40px;
+			background-color:#fff;
+			border-radius: 0px 0px 10px 10px;
+			
+			flex: 1;
+			
+			.sin-post-title{
+				padding-bottom:14px;
+				a{
+					color: #1E1E1E;
+					text-transform: capitalize;
+					font-weight:700;
+				}
+			}
+			.sin-post-excerpt{
+				font-size:14px;
+				line-height:1.57;
+				color: #1E1E1E;
+				padding-bottom:15px;
+			}
+			.sin-post-more{
+				a{
+					display:flex;
+					align-items:center;
+					color: #227102;
+					text-transform: capitalize;
+					font-size:14px;
+					font-weight:700;
+					.more-link-icon{
+						padding-left:10px;
+					}
+					&:hover{color: #1e1e1e;}
+				}
+			}
+			.sin-post-date-wrap{
+				position:absolute;
+				width:70px;
+				height:70px;
+				color:#fff;
+				background-color:#84B915;
+				top:0;
+				right:30px;
+				text-align:center;
+				font-weight:700;
+				.sin-post-month-wrap{
+					font-size:14px;
+					padding-top: 15px;
+				}
+				.sin-postd-d-date-wrap{
+					font-size:22px;
+				}
+			}
+		}
+	}
+	.news-announce-link-wrap{
+		text-align:center;
+		padding-top:60px;
+		a{
+			padding-left:25px;padding-right:25px;border:1px solid #227102;
+			&:hover{
+				color:#227102;background-color:#fff;
+			}
+		}
+	}
+}
+
+.news-announce-link-wrap{
+	a{
+		&.button{position:relative;}
+	}
+}
+
+.home-best-selling-wrap-leaf-container{
+	.best-selling-inner-subtitle-wrap{
+		@media (max-width:550px){margin-top:-25px;}
+	}
+}
+.gregs-favs-container,.reviews-container,.new-arrivals-container,.news-announce-container{
+	.best-selling-inner-subtitle-wrap{
+		@media (max-width:550px){margin-top:-20px;}
+	}
+}
+.news-announce-container{
+	.best-selling-inner-subtitle-wrap{
+		@media (max-width:550px){font-size: 35px;}
+	}
+}
+.best-selling-inner-title-wrap{
+	@media (max-width:800px){line-height: 1.2;}
+}
+
+.home-best-selling-wrap-leaf-container{
+	.best-selling-inner-desc-wrap{
+		@media (max-width:800px){
+			padding: 15px;
+			background-color: rgba(255,255,255,.6);
+		}
+	}
+}
+
+.copy-coupon-wrap-data{
+	cursor: pointer;
+	path{
+		fill:#d6d6d6;
+	}
+	&:hover{
+		path{
+			fill: #84B915;
+		}
+	}
+}
+.yotpo-reviews-container{
+	clear:both;
+	padding:15px 0;
+}
