@@ -1,4 +1,4 @@
-# Gregs Botanical
+# Greg's Botanical
 
 **URL:** https://gregsbotanical.com/
 
